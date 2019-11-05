@@ -1,4 +1,4 @@
-## IDP3 Three Faorite things
+## IDP3 Three Favourite things
 
 #YuFeng_Lin
 
