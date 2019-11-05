@@ -1,0 +1,50 @@
+
+{{!-- <section id="section2" class="panel">panel 2</section> --}}
+<section id="section3" class="panel">
+    <h1 class="user-panel-heading">
+        Welcome to our Rajin Group!
+    </h1>
+
+    <p>
+       A pioneer in its field, Akrapovič is widely recognised as a highly innovative materials technology company. 
+       The brand is synonymous with the highest level of design, performance enhancement and the creation of an 
+       unmistakable deeply resonant exhaust sound. The company’s products are designed and manufactured for 
+       motorcycles and performance cars by a passionate and highly-skilled workforce of over 1000 employees 
+       using the latest technology, processes and finest materials. The Racing R D department works with 
+       dozens of racing teams. Over 100 world champions have already relied on Akrapovič exhaust systems. 
+       And this is just the beginning of a long exciting ride. 
+    </p>
+
+    <h4>Click on a picture to learn more information about our product.</h4>
+
+    <div class="team">
+        <!-- loop through all our team members and put their info on the page -->
+        <!-- this is exactly like a forEach loop with plain JS -->
+        {{#each  people}}
+            <div class="user-panel">
+                <img class="u-avatar"  src="images/{{Image}}" alt="avatar">
+
+                <a class="u-link" href="{{ID}}">
+                    See More Info
+                </a>
+
+                <h1>{{Brand}}</h1>
+                <h3>{{Price}}</h3>
+            </div>
+        {{/each}}
+        
+    </div>
+    </div>
+
+    <!-- this will be filled in on the client side when we render our AJAX data -->
+    <section class="lightbox">
+        <span class="close">x</span>
+        <div class="sidebar">
+            <img src="" alt="larger bio image">
+        </div>
+
+        <div class="lb-content">
+
+        </div>
+    </section>
+</section>
